@@ -83,6 +83,7 @@ export const RESUME_DATA: ResumeData = {
     "JavaScript",
     "TypeScript",
     "React/Next.js",
+    "React Native",
     "Node.js",
     "GraphQL",
     "Redux",
