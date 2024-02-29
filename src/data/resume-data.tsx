@@ -7,7 +7,7 @@ export const RESUME_DATA: ResumeData = {
   location: "Mexico City, Mexico",
   locationLink: "https://www.google.com/maps/place/Ciudad+de+M%C3%A9xico",
   about:
-    "Software engineer passinoate about problem-solving, the web and tech in our daily life.",
+    "Software engineer passionate about problem-solving, the web and tech in our daily life.",
   summary:
     "I specialize in JavaScript, TypeScript and web related technologies. I have experience working with companies from all around the world. I am passionate about building products and leading teams.",
   avatarUrl: "",
