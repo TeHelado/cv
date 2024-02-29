@@ -13,7 +13,7 @@ export const RESUME_DATA: ResumeData = {
   avatarUrl: "",
   personalWebsiteUrl: "https://silis.dev",
   contact: {
-    email: "gmdsilis@gmail.com",
+    email: "hello@silis.dev",
     tel: "+525559628491",
     social: [
       {
