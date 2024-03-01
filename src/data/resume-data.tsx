@@ -66,7 +66,7 @@ export const RESUME_DATA: ResumeData = {
       start: "2018",
       end: "2021",
       description:
-        "Developed the core infrastructure of the client's identity verification platform including multiple microservices, serverless functions (Node.JS with TypeScript), database model, APIs, and various React dashboards with TypeScript, among others.",
+        "Developed the core infrastructure of the client's identity verification platform including multiple microservices, serverless functions, database model, APIs, and various dashboards, among others. Technologies: React, Node.js, Mongodb, Oauth2, Azure, Kubernetes, Docker",
     },
     {
       company: "Ember Desarrollo de Software",
@@ -76,7 +76,7 @@ export const RESUME_DATA: ResumeData = {
       start: "2018",
       end: "2022",
       description:
-        "Created on demand, tailored software for small and medium sized companies",
+        "Created on demand, tailored software for small and medium sized companies, led a small team of developers and was in direct contact with clients and stakeholders. Technologies: React, Node.js, Firebase.",
     },
   ],
   skills: [
@@ -88,6 +88,17 @@ export const RESUME_DATA: ResumeData = {
     "GraphQL",
     "Redux",
     "Serverless",
+    "AWS",
+    "Azure",
+    "Docker",
+    "Kubernetes",
+    "MongoDB",
+    "MySQL",
+    "Git",
+    "CI/CD",
+    "Jest",
+    "Agile",
+    "Scrum",
   ],
   projects: [],
 } as const;
