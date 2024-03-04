@@ -10,7 +10,7 @@ export const RESUME_DATA: ResumeData = {
     "Software engineer passionate about problem-solving, the web and tech in our daily life.",
   summary:
     "I specialize in JavaScript, TypeScript and web related technologies. I have experience working with companies from all around the world. I am passionate about building products and leading teams.",
-  avatarUrl: "/selfie.jpg",
+  avatarUrl: "/selfie.png",
   personalWebsiteUrl: "https://silis.dev",
   contact: {
     email: "hello@silis.dev",
