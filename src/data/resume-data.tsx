@@ -39,6 +39,16 @@ export const RESUME_DATA: ResumeData = {
   ],
   work: [
     {
+      company: "Earned",
+      link: "https://www.earned.com/",
+      badges: ["Remote"],
+      title: "Senior Front-end Developer",
+      start: "2024",
+      end: "2025",
+      description:
+        "Optimized the main website to enrich SEO experience and reduce bundle size. Added new features to the client portal and react native app to improve user experience. Worked closely with the design team to have a clean and consistent component design system. Technologies: React, TypeScript, Next.js, React Native",
+    },
+    {
       company: "All Athlete Inc.",
       link: "https://www.allathlete.com/",
       badges: ["Remote"],
@@ -82,11 +92,16 @@ export const RESUME_DATA: ResumeData = {
   skills: [
     "JavaScript",
     "TypeScript",
-    "React/Next.js",
+    "React",
+    "Next.js",
     "React Native",
     "Node.js",
+    "Tailwind CSS",
     "GraphQL",
     "Redux",
+    "Zustand",
+    "React Query",
+    "React Hook Form",
     "Serverless",
     "AWS",
     "Azure",
@@ -99,6 +114,7 @@ export const RESUME_DATA: ResumeData = {
     "Jest",
     "Agile",
     "Scrum",
+    "Figma",
   ],
   projects: [],
 } as const;
