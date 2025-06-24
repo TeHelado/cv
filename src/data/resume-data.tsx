@@ -3,13 +3,14 @@ import { ResumeData } from "./types";
 
 export const RESUME_DATA: ResumeData = {
   name: "David Silis",
+  title: "Senior Software Engineer | Front-End & Full-Stack Developer",
   initials: "DS",
   location: "Mexico City, Mexico",
   locationLink: "https://www.google.com/maps/place/Ciudad+de+M%C3%A9xico",
   about:
     "Software engineer passionate about problem-solving, the web and tech in our daily life.",
   summary:
-    "I specialize in JavaScript, TypeScript and web related technologies. I have experience working with companies from all around the world. I am passionate about building products and leading teams.",
+    "Results-driven software engineer with 6+ years of experience specializing in JavaScript, TypeScript, and modern web technologies. Proven expertise in developing scalable frontend architectures, cross-platform applications, and leading agile teams. Skilled in collaborating with global teams, optimizing performance, and building engaging user experiences using React, Next.js, and React Native. Passionate about crafting clean, maintainable code and delivering high-impact products.",
   avatarUrl: "",
   personalWebsiteUrl: "https://silis.dev",
   contact: {
@@ -45,8 +46,11 @@ export const RESUME_DATA: ResumeData = {
       title: "Senior Front-end Developer",
       start: "2024",
       end: "2025",
-      description:
-        "Optimized the main website to enrich SEO experience and reduce bundle size. Added new features to the client portal and react native app to improve user experience. Worked closely with the design team to have a clean and consistent component design system. Technologies: React, TypeScript, Next.js, React Native",
+      description: [
+        "Improved SEO and reduced JavaScript bundle size, boosting site performance.",
+        "Developed new features for the client portal and React Native mobile app.",
+        "Collaborated on a clean and consistent design system.",
+      ],
     },
     {
       company: "All Athlete Inc.",
@@ -55,8 +59,11 @@ export const RESUME_DATA: ResumeData = {
       title: "Senior Front-end Developer",
       start: "2023",
       end: "2024",
-      description:
-        "Worked on the main website to maintain feature parity with their iOS app. Technologies: React, TypeScript, Next.js",
+      description: [
+        "Maintained web and iOS feature parity.",
+        "Delivered responsive and performant features.",
+        "Led and coached an intern developer.",
+      ],
     },
     {
       company: "Chegg",
@@ -65,8 +72,12 @@ export const RESUME_DATA: ResumeData = {
       title: "Front-end Developer",
       start: "2021",
       end: "2023",
-      description:
-        "As part of the writing-tools team, I worked on the development of the new version of the Chegg Writing Tools, which included their grammar & plagiarism checker. Technologies: React, TypeScript, Next.js, GraphQL",
+      description: [
+        "Worked on Chegg Writing Tools (grammar and plagiarism checker).",
+        "Enhanced UI and performance in React/Next.js environment.",
+        "Reduced main app bundle size.",
+        "Improved performance and user experience minimizing class names and applying techniques like tree shaking and lazy loading.",
+      ],
     },
     {
       company: "SUMA México",
@@ -75,8 +86,11 @@ export const RESUME_DATA: ResumeData = {
       title: "Senior Full-Stack Developer",
       start: "2018",
       end: "2021",
-      description:
-        "Developed the core infrastructure of the client's identity verification platform including multiple microservices, serverless functions, database model, APIs, and various dashboards, among others. Technologies: React, Node.js, Mongodb, Oauth2, Azure, Kubernetes, Docker",
+      description: [
+        "Developed identity verification platform with microservices and serverless architecture.",
+        "Designed APIs, internal dashboards, and authentication flows.",
+        "Led a team of 5 developers.",
+      ],
     },
     {
       company: "Ember Desarrollo de Software",
@@ -85,8 +99,11 @@ export const RESUME_DATA: ResumeData = {
       title: "Senior Full-stack Developer",
       start: "2018",
       end: "2022",
-      description:
-        "Created on demand, tailored software for small and medium sized companies, led a small team of developers and was in direct contact with clients and stakeholders. Technologies: React, Node.js, Firebase.",
+      description: [
+        "Led a team developing custom software for small and medium sized companies.",
+        "Interfaced directly with stakeholders to define scope and deliverables.",
+        "Worked on a variety of projects, including CRM, ERP, and custom software solutions.",
+      ],
     },
   ],
   skills: [
@@ -116,5 +133,60 @@ export const RESUME_DATA: ResumeData = {
     "Scrum",
     "Figma",
   ],
-  projects: [],
+  projects: [
+    {
+      title: "Chegg Writing Tools",
+      techStack: ["React", "Next.js", "GraphQL", "TypeScript"],
+      description:
+        "Helped build the next generation of Chegg's grammar and plagiarism checker tools, with performance optimization and clean UI implementation.",
+    },
+    {
+      title: "Identity Verification Platform",
+      techStack: ["Node.js", "MongoDB", "Azure", "Kubernetes", "React"],
+      description:
+        "Led development of core identity verification system using microservices and serverless architecture for real-time client onboarding.",
+    },
+    {
+      title: "Earned Client Portal & Mobile App",
+      techStack: ["React", "React Native", "Next.js", "TypeScript"],
+      description:
+        "Implemented new portal features and improved mobile UX. Collaborated with design to build a consistent design system for web and mobile.",
+    },
+    {
+      title: "All Athlete Web Platform",
+      techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      description:
+        "Developed a feature-rich sports performance web platform with responsive UI that mirrored iOS functionality and supported scalable growth.",
+    },
+    {
+      title: "Microservice Logging & Monitoring System",
+      techStack: ["Node.js", "Docker", "Kubernetes", "MongoDB", "AWS"],
+      description:
+        "Built internal tooling for logging, alerting, and monitoring across services in SUMA's platform using container orchestration and serverless functions.",
+    },
+    {
+      title: "Custom ERP for Small Businesses",
+      techStack: ["React", "Firebase", "Node.js", "TypeScript"],
+      description:
+        "Developed tailored ERP modules (inventory, invoices, customer management) for small businesses. Delivered end-to-end systems from UI to backend.",
+    },
+    {
+      title: "CI/CD Automation Pipelines",
+      techStack: [
+        "GitHub Actions",
+        "Docker",
+        "TypeScript",
+        "Next.js",
+        "Azure DevOps",
+      ],
+      description:
+        "Set up CI/CD pipelines for automated testing, builds and deployments across front-end and microservice repositories.",
+    },
+    {
+      title: "Design System Library",
+      techStack: ["React", "TypeScript", "Tailwind CSS", "Figma"],
+      description:
+        "Collaborated with design and frontend teams to build a reusable UI component library with accessible, responsive components and documentation.",
+    },
+  ],
 } as const;

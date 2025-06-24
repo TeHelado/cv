@@ -5,6 +5,7 @@ export interface ResumeData {
   initials: string;
   location: string;
   locationLink: string;
+  title?: string;
   about: string;
   summary: string;
   avatarUrl: string;
@@ -54,5 +55,5 @@ export interface Work {
   title: string;
   start: string;
   end: string;
-  description: string;
+  description: string | string[];
 }
