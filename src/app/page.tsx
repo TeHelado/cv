@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { RESUME_DATA } from "@/data/resume-data";
+import { RESUME_DATA, SECTION_HEADERS } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 
 export const metadata: Metadata = {
@@ -98,13 +98,13 @@ export default function Page() {
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">About</h2>
-          <p className="text-pretty font-mono text-sm text-muted-foreground">
+          <h2 className="text-xl font-bold">{SECTION_HEADERS.about}</h2>
+          <p className="whitespace-pre-line text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold">{SECTION_HEADERS.experience}</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
@@ -152,7 +152,7 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
+          <h2 className="text-xl font-bold">{SECTION_HEADERS.education}</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
@@ -172,17 +172,28 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
+          <h2 className="text-xl font-bold">{SECTION_HEADERS.skills}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 gap-4 print:gap-3">
+            {Object.entries(RESUME_DATA.skills).map(([category, skills]) => (
+              <div key={category}>
+                <h3 className="text-base font-semibold mb-2">
+                  {category.charAt(0).toUpperCase() + category.slice(1).replace(/([A-Z])/g, " $1").trim()}
+                </h3>
+                <ul className="list-disc pl-5 space-y-1">
+                  {skills.map((skill: string) => (
+                    <li key={skill} className="text-sm text-muted-foreground">
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </Section>
 
         {RESUME_DATA.projects.length > 0 && (
           <Section className="print-force-new-page scroll-mb-16">
-            <h2 className="text-xl font-bold">Projects</h2>
+            <h2 className="text-xl font-bold">{SECTION_HEADERS.projects}</h2>
             <div className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2">
               {RESUME_DATA.projects.map((project) => {
                 return (

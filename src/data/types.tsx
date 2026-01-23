@@ -13,9 +13,19 @@ export interface ResumeData {
   contact: Contact;
   education: Education[];
   work: Work[];
-  skills: string[];
+  skills: Skills;
   projects: Project[];
 }
+
+export interface Skills {
+  languages: string[];
+  frameworks: string[];
+  stateManagement: string[];
+  testing: string[];
+  cloudDevOps: string[];
+  databases: string[];
+  tools: string[];
+};
 
 export interface Contact {
   email: string;
